@@ -16,6 +16,8 @@ export default function WalletConnectCard() {
   const provider = useProvider()
   const ENSNames = useENSNames(provider)
 
+  console.log('WalletConnectCard', chainId, accounts, isActivating, isActive, provider, ENSNames)
+
   const [error, setError] = useState<Error | undefined>(undefined)
 
   // log URI when available

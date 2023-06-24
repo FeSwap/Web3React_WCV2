@@ -27,7 +27,6 @@
     "noImplicitReturns": true,
     "downlevelIteration": true,
     "types": [
-      "react-spring",
       "jest"
     ],
     "baseUrl": "src"

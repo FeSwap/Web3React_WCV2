@@ -7,6 +7,7 @@ import { WalletConnect } from '@web3-react/walletconnect'
 import { WalletConnect as WalletConnectV2 } from '@web3-react/walletconnect-v2'
 import { useCallback, useEffect, useState } from 'react'
 import type { Connector } from '@web3-react/types'
+import { getName } from '../utils'
 
 import { CHAINS, getAddChainParameters } from '../chains'
 
@@ -108,6 +109,8 @@ export function ConnectWithSelect({
     },
     [connector, activeChainId, setError]
   )
+
+  console.log('BBBBBBBBB', activeChainId, desiredChainId, isActivating, getName(connector), connector )
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
