@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import CoinbaseWalletCard from './components/connectorCards/CoinbaseWalletCard'
+import GnosisSafeCard from './components/connectorCards/GnosisSafeCard'
+import MetaMaskCard from './components/connectorCards/MetaMaskCard'
+import NetworkCard from './components/connectorCards/NetworkCard'
+import WalletConnectCard from './components/connectorCards/WalletConnectCard'
+import WalletConnectV2Card from './components/connectorCards/WalletConnectV2Card'
+import ProviderExample from './components/ProviderExample'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <ProviderExample />
+      <div style={{ display: 'flex', flexFlow: 'wrap', fontFamily: 'sans-serif' }}>
+        <MetaMaskCard />
+        <WalletConnectV2Card />
+        <WalletConnectCard />
+        <CoinbaseWalletCard />
+        <NetworkCard />
+        <GnosisSafeCard />
+      </div>
+    </>
+  )
 }
-
-export default App;

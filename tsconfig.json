@@ -18,9 +18,28 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "downlevelIteration": true,
+    "types": [
+      "react-spring",
+      "jest"
+    ],
+    "baseUrl": "src"
   },
+  "exclude": [
+    "node_modules",
+    "cypress"
+  ],
   "include": [
-    "src"
+    "src",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "src/components/Confetti/index.js"
   ]
 }
