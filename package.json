@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "license": "GPL-3.0-or-later",
-  "dependencies": {
+  "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -19,7 +19,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@craco/craco": "^7.1.0"
   },
-  "devDependencies": {
+  "dependencies": {
     "@types/array.prototype.flat": "^1.2.1",
     "@types/array.prototype.flatmap": "^1.2.2",
     "array.prototype.flat": "^1.2.4",
@@ -71,7 +71,7 @@
   },
   "engines": {
     "npm": "please-use-yarn",
-    "node": ">=18.x",
+    "node": ">=16.x",
     "yarn": ">=1.22"
   }
 }
